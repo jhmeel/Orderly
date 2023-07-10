@@ -1,0 +1,85 @@
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: fit-content;
+  width: 100%;
+  background-color: #07485b;
+  color: #ccc;
+  padding: 20px;
+  text-align: center;
+  z-index: 999;
+ }
+ .foot-logo{
+    height: 130px;
+    width: 130px;
+    border:1px solid #ccc;
+ }
+ .footer-copyright {
+    width: 100%;
+    height: 40px;
+    background: rgba(7, 162, 162, 0.402);
+    /* positions the copyright at the bottom of the footer */
+    padding: 10px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+ }
+ .footer-body {
+    margin-bottom: 40px;
+ }
+ /* the clearfix hack */
+ .footer-body::after {
+    content: "";
+    display: block;
+    clear: both;
+ }
+ /* float the divs */
+ .footer-body > div {
+    float: left;
+    padding: 20px;
+ }
+
+ .footer-body > div:first-child {
+    font-size: 150%;
+    width: 35%;
+    text-align: center;
+ }
+
+ .footer-body > div:last-child {
+    width: 65%;
+ }
+ .footer-body ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+ }
+ .footer-body li > a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 7px;
+ }
+
+@media (max-width: 767px) {
+    .footer {
+      font-size: 14px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .footer {
+      font-size: 16px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .footer {
+      font-size: 18px;
+    }
+  }
+  
+
+  .f-copy-right{
+     color: #ccc;
+  }

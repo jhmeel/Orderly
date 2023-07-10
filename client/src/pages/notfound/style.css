@@ -1,0 +1,22 @@
+.not-found{
+    height:100vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+.not-found h1{
+    text-align: center;
+}
+.m-info{
+    color:crimson;
+    text-align: center;
+}
+.g-txt{
+color: gray;
+}
+.g-home{
+color: blueviolet;
+}

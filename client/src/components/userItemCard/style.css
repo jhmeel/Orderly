@@ -1,0 +1,290 @@
+.user-card {
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  border: 1px solid #ededed;
+  background: #fff;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.user-card-img {
+  --size: 80px;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transform: translateY(-50%);
+  background: #176984;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  top: 20px;
+}
+.user-card-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user-card-img::before {
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  border: 1rem solid #e8e8e8;
+}
+
+.usr-conn {
+  background-color: rgb(255, 255, 255);
+  padding: 4px 8px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  color: #ccc;
+}
+.usr-conn span {
+  border-left: 1px solid #ccc;
+  padding-left: 5px;
+  color: #ccc;
+}
+.user-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  overflow-y: hidden;
+  gap: 10px;
+  width: 100%;
+}
+
+.user-card:hover .user-card-img {
+  --size: 90px;
+  width: var(--size);
+  height: var(--size);
+ 
+}
+
+.modal-username {
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.ref-url {
+  background-color: #176984;
+  color: #fff;
+  cursor: copy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.ref-copy-icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.user-card-header {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+.u-nav-tab {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 8px;
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  max-width: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+#u-ul {
+  width: 100%;
+  font-size: 14px;
+  list-style: none;
+}
+#u-ul li {
+  width: 100%;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  border-bottom: 1px solid #ededed;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#u-ul li:hover {
+  background-color: #176984;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+#u-ul li:last-child {
+  border-bottom: none;
+}
+#u-ul li:first-child:hover {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#u-ul li:last-child:hover {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.u-ul-icon {
+  height: 20px;
+  width: 20px;
+}
+.u-edit-prof{
+  position: absolute;
+  left: 95%;
+  bottom: -10px;
+  cursor: pointer;
+}
+
+.u-setting {
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.snackbar-btn {
+  padding: 6px 12px;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.user-bio-segment{
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid #ededed;
+  border-top:1px solid #ededed;
+  font-weight: 600;
+ font-size: 18px;
+ padding: 5px 10px;
+}
+
+
+
+.user-bio {
+  font-size: 0.75em;
+  color:gray;
+  letter-spacing: 0.05rem;
+  text-overflow: hidden;
+  text-align: center;
+  white-space: wrap;
+
+}
+.user-interest-segment{
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid #ededed;
+  font-weight: 600;
+ font-size: 18px;
+ padding: 5px 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+
+}
+.user-interest-header{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  
+}
+.manage-interest{
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #ccc;
+  cursor: pointer;
+}
+.user-interest-holder{
+  height: fit-content;
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+
+}
+
+.user-interest-item{
+  width: fit-content;
+  height: fit-content;
+
+  font-size: 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 1.5px solid #176984;
+  padding: 10px 20px;
+  background-color: #176984;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3px;
+  transition: .3s ease-in;
+}
+.user-interest-item:hover{
+  background-color: transparent;
+  color: gray;
+}
+
+.reading-list-segment{
+  width: 100%;
+  height: fit-content;
+  border-bottom: 1px solid #ededed;
+  font-weight: 600;
+ font-size: 18px;
+ padding: 5px 10px;
+ position: relative;
+
+}
+
+.u-reading-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0px 15px;
+}

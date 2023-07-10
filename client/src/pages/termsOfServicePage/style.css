@@ -1,0 +1,11 @@
+.terms-container{
+    padding: 10px 20px;
+}
+.terms-container p{
+    line-height: 2rem;
+}
+
+.terms-container h3{
+    text-decoration:  underline;
+    text-transform: capitalize;
+}

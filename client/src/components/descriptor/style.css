@@ -1,0 +1,74 @@
+.des-card {
+  width: 100%;
+  height: 250px;
+  color: white;
+  display: flex;
+  margin-top: 5px;
+  padding: 10px 20px;
+  overflow: wrap;
+  
+}
+
+.des-card .des-item {
+  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.des-item:hover {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.des-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 7px;
+}
+
+.des-item--1 {
+  background: #c7c7ff;
+  margin-right: 8px;
+}
+
+.des-item--3 {
+  background: #a9ecbf;
+}
+
+.des-item--4 {
+  background: #38a1ac;
+  margin-left: 8px;
+}
+
+.des-quantity {
+  font-size: 25px;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.text {
+  font-size: 16px;
+  font-family: serif;
+  font-weight: 600;
+}
+
+.text--1 {
+  color: rgba(149, 149, 255, 1);
+}
+
+.text--3 {
+  color: rgba(66, 193, 110, 1);
+}
+
+.text--4 {
+  color: #134248;
+}
